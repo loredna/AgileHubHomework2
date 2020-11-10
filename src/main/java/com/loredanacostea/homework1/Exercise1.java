@@ -10,11 +10,7 @@ Add a comment in your code to explain the whole behavior (why it works / fails)
 */
 public class Exercise1 {
     public Map<Integer, String> mapExample() {
-        Map<Integer, String> myMap = new HashMap<>();
-        myMap.put(1, "First value");
-        myMap.put(2, "Second value");
-        myMap.put(3, "Third value");
-        return myMap;
+        return Map.of(1, "First value", 2, "Second value", 3, "Third value");
     }
 
     public static void main(String[] args) {
@@ -24,10 +20,8 @@ public class Exercise1 {
         System.out.println(mapExample);
 
         /*
-        The fourth element would not be added because mapExample is returning a Map,
-         which is an interface and can't be changed, but can be used.
-         If we want to add new element in the map we can use HaspMap as a returning type instead,
-          which is the impl of Map.
-        */
+        Map.of() - ImmutableCollections
+        In order to add an element we can create new HashMap<>(Map.of(...))
+         */
     }
 }
