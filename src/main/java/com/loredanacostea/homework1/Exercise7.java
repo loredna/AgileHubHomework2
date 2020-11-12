@@ -7,7 +7,7 @@ Add to it a function which returns a string describing whether it’s a workday 
 public class Exercise7 {
 
     public static void main(String[] args) {
-        System.out.println(WeekDay.getDayType(WeekDay.Monday));
-        System.out.println(WeekDay.getDayType(WeekDay.Saturday));
+        System.out.println(WeekDay.Monday.getDayType());
+        System.out.println(WeekDay.Saturday.getDayType());
     }
 }
