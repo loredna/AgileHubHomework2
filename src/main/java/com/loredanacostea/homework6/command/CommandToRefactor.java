@@ -1,4 +1,4 @@
-package com.loredanacostea.homework6.device;
+package com.loredanacostea.homework6.command;
 
 public class CommandToRefactor {
 

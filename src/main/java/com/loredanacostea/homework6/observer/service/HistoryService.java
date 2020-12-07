@@ -1,8 +1,8 @@
 package com.loredanacostea.homework6.observer.service;
 
-import com.loredanacostea.homework6.observer.HistoryMsgObserver;
+import com.loredanacostea.homework6.observer.BusyServiceObserver;
 
-public class HistoryService implements HistoryMsgObserver {
+public class HistoryService implements BusyServiceObserver {
 
     private final BusyService busyService;
 
@@ -12,8 +12,7 @@ public class HistoryService implements HistoryMsgObserver {
     }
 
     @Override
-    public void addHistoryMessage() {
+    public void notifyChildren() {
         System.out.println(this.getClass().getSimpleName() + " child notified. Adding history message..");
     }
-
 }

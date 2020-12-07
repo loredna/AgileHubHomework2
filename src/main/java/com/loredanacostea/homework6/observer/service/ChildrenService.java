@@ -1,8 +1,8 @@
 package com.loredanacostea.homework6.observer.service;
 
-import com.loredanacostea.homework6.observer.UpdateChildrenObserver;
+import com.loredanacostea.homework6.observer.BusyServiceObserver;
 
-public class ChildrenService implements UpdateChildrenObserver {
+public class ChildrenService implements BusyServiceObserver {
 
     private final BusyService busyService;
 
@@ -12,7 +12,7 @@ public class ChildrenService implements UpdateChildrenObserver {
     }
 
     @Override
-    public void notifyChildrenUpdate() {
+    public void notifyChildren() {
         System.out.println(this.getClass().getSimpleName() + " notified. Updating it..");
     }
 }
